@@ -43,7 +43,7 @@ def upload_image():
     if uploaded_file is not None:
         try:
             image = Image.open(uploaded_file)
-            st.image(image, caption='Uploaded Image.', use_column_width=True) #Display image
+            st.image(image, caption='Uploaded Image.', use_container_width=True) #Display image
             return image #Return the image object
         except Exception as e:
             st.error(f"Could not open image: {e}")
