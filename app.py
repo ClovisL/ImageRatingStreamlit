@@ -1,4 +1,4 @@
-from PIL import Image, ImageTk
+from PIL import Image
 import torch
 import torchvision.transforms as transforms
 import torch.nn as nn
