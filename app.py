@@ -74,6 +74,8 @@ def predict_image(image, model, device): #Take the model and device as an argume
         st.error(f"Prediction error: {e}")
 
 st.title("Image Sentiment Analysis")
+st.write("This app analyzes the sentiment of an uploaded image.")
+st.write("The sentiment score will be between 1 (Mostly Negative) and 5 (Mostly Positive)")
 
 uploaded_image = upload_image()
 
